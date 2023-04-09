@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Nunito', sans-serif;
+
+    background: rgb(48,75,197);
+    background: linear-gradient(135deg, rgba(43,32,32,1) 0%, #000000 50%, rgba(48,75,197,1) 100%);
+    background-attachment: fixed;
+}
+
+.form-container {
+    width: 400px;
+    height: 555px;
+    margin: auto;
+
+    background-color: #FFF;
+    border-radius: 10px;
+    border-top: 5px solid #68c5ca;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.form-title {
+    height: 80px;
+    margin: 0;
+    line-height: 100px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.form input {
+    width: 60%;
+    margin: 20px auto;
+    padding: 0 20px;
+
+    display: block;
+
+    line-height: 35px;
+    font-family: 'Nunito', sans-serif;
+    border: none;
+    border: 2px solid #303030;
+    border-radius: 20px;
+    outline: none;
+    transition-duration: .3s;
+}
+
+.form input:focus {
+    border-color: #68c5ca;
+    width: 70%;
+    transition-duration: .3s;
+}
+
+.form input[type="submit"] {
+    margin: 40px auto;
+    background-color: #303030;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #68c5ca;
+    border-color: #68c5ca;
+}
+.form label{
+    margin-left: 100px;
+    border-bottom: 1px solid #000;
+width : 700px;}
+.social-bar {
+    height: 100px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-bar img{
+    width: 40px;
+    cursor: pointer;
+}
+
+.social-bar img:hover {
+    filter: brightness(1.1);
+}
+
+.form-separator {
+    position: relative;
+    margin-top: 50px;
+}
+
+.form-separator .separator {
+    width: 70%;
+    height: 5px;
+    margin: 20px auto;
+    border: none;
+    background: rgb(48,75,197);
+    background: linear-gradient(135deg, rgba(48,75,197,1) 0%, #68c5ca 50%, rgba(48,75,197,1) 100%);
+}
+
+.form-separator strong {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 50px;
+    text-align: center;
+    font-weight: 900;
+    background-color: #FFF;
+
+    transform: translate(-50%, -50%);
+}
+
+.signin-message {
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.signin-message a {
+    color: #304bc5;
+    font-weight: 700;
+}
+
+p{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited
+{
+    color: rgb(31, 31, 33);
+}
+a:hover{
+    color: #1aeadc;
+}
